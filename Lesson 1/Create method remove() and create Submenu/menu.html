@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <script src="js/Container.js"></script>
+    <script src="js/Menu.js"></script>
+    <script src="js/MenuItem.js"></script>
+    <script src="js/submenu.js"></script>
+    <script>
+        window.onload = function () {
+            var menu1 = new Menu('my', 'my', [
+                new MenuItem('/', 'Главная страница'),
+                new MenuItem('/about', 'О нас'),
+                new MenuItem('/service', 'Услуги'),
+                new Submenu('subMy', 'subMy', [
+                    new MenuItem('/', 'Главная страница'),
+                    new MenuItem('/about', 'О нас'),
+                    new MenuItem('/service', 'Услуги'),
+                    new MenuItem('/contacts', 'Контакты'),
+                    new MenuItem('/blog', 'Блог')
+                ]),
+                new MenuItem('/contacts', 'Контакты'),
+                new MenuItem('/blog', 'Блог')
+            ]);
+
+            var menuApp = document.getElementById('menu1');
+            menuApp.innerHTML = menu1.render();
+
+            var button = document.querySelector('#deleteMenu').addEventListener('click', function () {
+                menu1.remove();
+            });
+
+            //setTimeout(function () {menu1.remove() }, 5000);
+
+
+        };
+
+    </script>
+</head>
+
+<body>
+    <div id="menu1"></div>
+
+    <button id="deleteMenu">Удалить меню</button>
+</body>
+
+</html>

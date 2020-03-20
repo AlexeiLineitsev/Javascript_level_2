@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hambugers</title>
+    <script src="js/hamburger.js"></script>
+    <script>
+
+        smallHamb1 =
+            new Hamburger(new SIZE_SMALL(), new STUFFING_CHEESE(), new TOPPING_SPICE());
+        console.log(smallHamb1);
+        console.log('Calories - ', smallHamb1.getCalories());
+        console.log('Price - ', smallHamb1.getPrice());
+
+        bigHamb1 =
+            new Hamburger(new SIZE_LARGE(), null, new TOPPING_MAYO());
+        console.log(bigHamb1);
+        console.log('Calories - ', bigHamb1.getCalories());
+        console.log('Price - ', bigHamb1.getPrice());
+        
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
