@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rounded-lg {
+    /*width: 150px;*/
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.rounded {
+    height: 300px;
+}
+
+.imgBig {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
