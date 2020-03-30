@@ -1,0 +1,14 @@
+.error-input {
+    position: absolute;
+    display: inline-block;
+    left: 55%;
+    bottom: 92%;
+
+    background: #d8182a;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error-input-non-visible {
+    display: none;
+}

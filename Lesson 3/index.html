@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Lesson 3(Регулярные выражения)</title>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lesson 3(Регулярные выражения)</a>
+    </nav>
+
+    <div class="alert alert-info"  style="margin-top: 15px; font-size: 25px;">Домашнее задание</div>
+    <div class="alert alert-info"  style="margin-top: 15px; font-size: 25px;">Задание 1</div>
+
+    <div class="alert alert-warning"  style="margin-top: 15px">У вас есть большой текст, в котором для обозначения диалогов используются одинарные
+        кавычки. Придумать шаблон, который меняет одинарные кавычки на двойные. <br> (Возьмем как пример: var str = `var a = str.replace(/[']/g, '"') aren't t'qwewert`)</div>
+    <div class="alert alert-success" role="alert" id="task-1">...</div>
+
+
+
+
+    <div class="alert alert-info"  style="margin-top: 15px; font-size: 25px;">Задание 2</div>
+
+    <div class="alert alert-warning"  style="margin-top: 15px">Улучшить шаблон таким образом, чтобы конструкции типа aren’t не меняли одинарную
+        кавычку на двойную. <br> (Возьмем как пример: var a = str.replace(/[']/g, '"')  aren't t'qwewert)</div>
+    <div class="alert alert-success" role="alert" id="task-2">...</div>
+
+
+
+
+
+
+
+    <div class="alert alert-info"  style="margin-top: 15px; font-size: 25px;">Задание 3</div>
+
+    <div class="alert alert-warning"  style="margin-top: 15px">Создать форму обратной связи с полями: Имя, Телефон, e-mail, текст, кнопка «Отправить».
+        <br>
+        При нажатии на кнопку «Отправить» произвести валидацию полей следующим образом:  <br>
+        a. Имя содержит только буквы;  <br>
+        b. Телефон подчиняется шаблону +7(000)000-0000;  <br>
+        c. E-mail выглядит как mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru  <br>
+        d. Текст произвольный;  <br>
+        e. В случае не прохождения валидации одним из полей необходимо выделять это поле  <br>
+        красной рамкой и сообщать пользователю об ошибке.</div>
+
+
+    <div class="col-lg-6 alert-info alert">
+        <form role="form" method="post">
+            <div class="form-group">
+
+                <label for="name">Имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Введите имя">
+                <div data-title="Введите правильно Имя используя только!!! буквы алфавита" class="hover"></div>
+
+                <label for="phone">Телефон</label>
+                <input type="text" class="form-control" id="phone" placeholder="Введите телефон">
+
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Введите email">
+
+                <label for="message">Сообщение</label>
+                <textarea class="form-control" rows="3"></textarea>
+
+            </div>
+            <button type="submit" class="btn btn-default" style="background-color: #d3d3d3;">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<footer style="margin-bottom: 300px"></footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
